@@ -1,0 +1,341 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #fffefc, #fef9f3);
+    color: #1a1a1a;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 60px;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .sub-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background: linear-gradient(90deg, #ffc163, #fda12b);
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+  
+  .image-content img {
+    width: 350px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+/* Custom section styling if needed */
+.revenue-section {
+    background: #ffffff;
+    padding: 4rem 1rem;
+  }
+  
+  .revenue-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .revenue-section h2 span {
+    color: #fbbf24; /* Tailwind's yellow-400 */
+  }
+  
+  .revenue-block {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+  
+  .revenue-block img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Alternate reverse row layout on larger screens */
+  @media (min-width: 1024px) {
+    .revenue-block {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .revenue-block.reverse {
+      flex-direction: row-reverse;
+    }
+  
+    .revenue-text,
+    .revenue-image {
+      width: 50%;
+    }
+  }
+
+  .feature-section {
+    background-color: #f9f9f6;
+    padding: 4rem 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-box {
+    background-color: #D1FADF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .icon-box img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .faq-section {
+    background: #f9f9f6;
+    padding: 4rem 1rem;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .faq-label {
+    text-align: center;
+    color: #22c55e;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #111827;
+  }
+  
+  .faq-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .faq-question {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #111827;
+  }
+  
+  .faq-question .arrow {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-answer {
+    padding: 0 1.5rem 1rem;
+    font-size: 0.95rem;
+    color: #4B5563;
+    display: none;
+  }
+  
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+  
+  .faq-item.open .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .footer {
+    background-color: #262626;
+    color: #fff;
+    padding: 3rem 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-brand .logo {
+    height: 40px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-links a {
+    color: #e5e5e5;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-contact {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-contact a {
+    color: #e5e5e5;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: #b3b3b3;
+  }
+  
+  .social-icons a {
+    margin-left: 1rem;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1); /* Makes white on dark */
+  }
+  
+  
